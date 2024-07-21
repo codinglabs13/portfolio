@@ -8,10 +8,10 @@ import '../assets/scss/home.scss'
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id='home'>
         <div className="text">
             <div className="bio">
-                <h1>Bonjour, je suis Dorian 👋</h1>
+                <h1>Bonjour, je m'appel Dorian 👋</h1>
                 <p>Je suis un développeur full stack (PHP, Symfony, React.js & MySQL) spécialisé dans la conception et la création d'application,
                 accessibles, visuellement attrayants et réactifs. Je viens d'obtenir mon titre professionnel de Concepteur Développeur d'Applications.
                 Même après plus de 3 ans à créer des applications web, j'aborde chaque projet avec la même passion qu'au premier jour.</p>

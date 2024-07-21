@@ -5,7 +5,7 @@ import '../assets/scss/project.scss'
 
 const Project = () => {
   return (
-    <div className="project"> 
+    <div className="project" id='project'> 
         <div className="title">
             <h2 className="badge">
                 Mes Projets

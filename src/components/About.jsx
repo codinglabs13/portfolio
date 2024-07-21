@@ -4,7 +4,7 @@ import '../assets/scss/about.scss'
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id='about'>
         <div className="title">
             <span className="badge">
                 À propos de moi

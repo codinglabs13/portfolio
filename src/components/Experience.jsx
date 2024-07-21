@@ -4,10 +4,10 @@ import '../assets/scss/experience.scss'
 
 const Experience = () => {
   return (
-    <div className="experience">
+    <div className="experience" id='experience'>
         <div className="title">
             <h2 className="badge">
-                Mes Expérience
+                Mes Expériences
             </h2>
             <span className="subtitle">
                 Voici un bref résumé de mes expériences les plus récentes :

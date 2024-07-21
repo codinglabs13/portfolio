@@ -42,7 +42,7 @@ const projectData = [
     {
         image: Portfolio,
         title: "Mon portfolio",
-        description: "Ce portfolio a été conçu pour mettre en lumière mon parcours professionnel, mes compétences et mes réalisations dans le domaine du développement logiciel. Il sert à présenter les projets sur lesquels j'ai travaillé.",
+        description: "Ce portfolio a été conçu pour mettre en lumière mon parcour professionnel, mes compétences et mes réalisations dans le domaine du développement logiciel. Il sert à présenter les projets sur lesquels j'ai travaillé.",
         stack: [
             "React",
             "SCSS",

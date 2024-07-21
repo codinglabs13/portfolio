@@ -5,7 +5,7 @@ import '../assets/scss/skills.scss'
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <div className="skills" id='skills'>
         <div className="title">
             <h2 className="badge">
                 Mes Compétences

@@ -24,6 +24,7 @@ body{
     font-family: "Mulish", sans-serif;
     font-weight: 400;
     position: relative;
+    scroll-behavior: smooth;
 
     a{
         text-decoration: none;
@@ -41,4 +42,10 @@ body{
         padding: 0;
         cursor: pointer;
     }
+
+    header{
+        height: 86px;
+    }
+
+    
 }
