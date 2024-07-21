@@ -1,0 +1,154 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 80px;
+    align-items: center;
+    background: #fff;
+    z-index: 1;
+    position: relative;
+
+    .navbar-brand{
+        width: 212px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 25px 40px;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 25px 20px;
+
+        .navbar-brand{
+            width: 200px;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .mobile-menu-btn{
+        display: none;
+        @media screen and (max-width: 1036px) {
+            display: flex;
+
+            .btn-mobile{
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+
+                &::before, &::after{
+                    content: "";
+                    width: 26px;
+                    height: 3px;
+                    background: #111827;
+                    border-radius: 12px;
+                    position: absolute;
+                }
+
+                &::before{
+                    top: 8px;
+                }
+
+                &::after{
+                    bottom: 8px;
+                }
+
+                .line{
+                    min-width: 26px;
+                    background: #111827;
+                    display: flex;
+                    height: 3px;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+
+    .nav-links{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        width: fit-content;
+        gap: 24px;
+        margin: 0;
+        @media screen and (max-width: 1036px) {
+            display: none;
+        }
+
+        .nav-item{
+            width: fit-content;
+
+            .nav-link{
+                color: #4B5563;
+                line-height: 24px;
+                transform: scale(1);
+                transition: 300ms ease-in-out;
+                font-weight: 500;
+
+                &:hover{
+                    color: #111316;
+                    transform: scale(1.9);
+                    transition: 300ms ease-in-out;
+                }
+            }
+        }
+
+        .line{
+            height: 24px;
+            background-color: #4B5563;
+            width: 1px;
+        }
+
+        .dark-mode-contact{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            .dark-mode{
+                .btn-theme{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    color: #4B5563;
+                    cursor: pointer;
+
+                    span{
+                        width: 100%;
+                        height: 100%;
+
+                        svg{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .sun{
+                        display: none;
+                    }
+                }
+            }
+
+            .btn-download{
+                padding: 8px 16px;
+                background-color: #111827;
+                border-radius: 12px;
+                color: #F9FAFB;
+            }
+        }
+    }
+
+
+}
