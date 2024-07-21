@@ -97,10 +97,18 @@
                 width: 36px;
                 height: 36px;
 
+               
+
                 svg{
                     width: 100%;
                     height: 100%;
                     color: #4B5563;
+                    transition: 300ms ease-in-out;
+
+                    &:hover, &:active{
+                        color: #1ABCFE;
+                        transition: 300ms ease-in-out;
+                    }
                 }
             }
         }

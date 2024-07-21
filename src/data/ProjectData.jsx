@@ -6,7 +6,7 @@ import Login from '../assets/img/login.svg'
 const projectData = [
     {
         image: NotAnnuaire,
-        title: "Not-annuaire.app",
+        title: "Not annuaire",
         description: "NotAnnuaire.app est un site qui facilite la recherche de notaires dans chaque région. Pendant mon stage, j'ai collaboré avec un autre stagiaire pour réaliser une partie administrative destinée aux instances de notaires, afin de leur simplifier la gestion de tous les notaires de leur région.",
         stack: [
             "PHP",

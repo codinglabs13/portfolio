@@ -90,6 +90,10 @@
                         font-size: 16px;
                         line-height: 24px;
                         color: #4B5563;
+
+                        @media screen and (max-width: 500px) {
+                            text-align: justify;
+                        }
                     }
 
                     .group-stack{
@@ -133,6 +137,11 @@
                                 width: 24px;
                                 height: 24px;
                                 color: #4B5563;
+
+                                &:hover{
+                                    color: #1ABCFE;
+                                    transition: 300ms ease-in-out;
+                                }
                             }
                         }
                     }

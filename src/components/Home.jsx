@@ -28,7 +28,7 @@ const Home = () => {
                 
             </div>
             <div className="link-contact">
-                <a href="https://github.com/codinglabs13" className='icon-contact'>
+                <a href="https://github.com/codinglabs13" target='_blanc' className='icon-contact'>
                     <FaSquareGithub />
                 </a>
             </div>

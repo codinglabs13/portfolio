@@ -30,8 +30,8 @@ const Project = () => {
                                 ))}
                             </div>
                             <div className="links">
-                                {item.link && <a className='link' href={item.link}><FaLink /></a>}
-                                {item.git && <a className='link' href={item.git}><FaGithub /></a>}
+                                {item.link && <a className='link' target='_blanc' href={item.link}><FaLink /></a>}
+                                {item.git && <a className='link' target='_blanc' href={item.git}><FaGithub /></a>}
                             </div>
                             {item.soon && <span className='badge'>{item.soon}</span>}
                         </div>

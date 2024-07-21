@@ -23,9 +23,16 @@ body{
     font-size: 16px;
     font-family: "Mulish", sans-serif;
     font-weight: 400;
+    position: relative;
 
     a{
         text-decoration: none;
+        transition: 300ms ease-in-out;
+
+        &:hover{
+            color: #1ABCFE;
+            transition: 300ms ease-in-out;
+        }
     }
 
     .btn{
