@@ -1,4 +1,7 @@
 import React from 'react'
+import projectData from '../data/ProjectData'
+import { FaLink, FaGithub } from "react-icons/fa6"
+import '../assets/scss/project.scss'
 
 const Project = () => {
   return (
@@ -13,22 +16,25 @@ const Project = () => {
         </div>
         <div className="content">
             <ul className='card-list'>
-                {experienceData.map((item, index) => (
+                {projectData.map((item, index) => (
                     <li className='card' key={index}>
-                        <div className="logo">
-                            <img src={item.logo} alt={item.logoAlt} />
+                        <div className="img-content">
+                            <img src={item.image} alt={item.alt} />
                         </div>
-                        <div className="title-list">
+                        <div className="text-content">
                             <h3>{item.title}</h3>
-                            <ul>
-                                {item.list.map((child, childIndex) => (
-                                    <li key={childIndex}>{child}</li>
+                            <p>{item.description}</p>
+                            <div className="group-stack">
+                                {item.stack.map((child, index) => (
+                                    <span className='badge' key={index}>{child}</span>
                                 ))}
-                            </ul>
+                            </div>
+                            <div className="links">
+                                {item.link && <a className='link' href={item.link}><FaLink /></a>}
+                                {item.git && <a className='link' href={item.git}><FaGithub /></a>}
+                            </div>
+                            {item.soon && <span className='badge'>{item.soon}</span>}
                         </div>
-                        <span className="date">
-                            {item.date}
-                        </span>
                     </li>
                 ))}
             </ul>
