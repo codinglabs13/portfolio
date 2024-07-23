@@ -162,6 +162,13 @@ nav{
                 background-color: #005171;
                 border-radius: 12px;
                 color: #F9FAFB;
+                border: 1px solid #005171;
+
+                &:hover{
+                    background-color: #00658d;
+                    border-color: #00658d;
+                    transition: 300ms ease-in-out;
+                }
             }
         }
     }
