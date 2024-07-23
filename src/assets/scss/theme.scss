@@ -1,0 +1,75 @@
+:root{
+    --title: #111827;
+    --text: #4B5563;
+    --hover: #00668e;
+    --blue: #005171;
+    --btn-mobile: #111827;
+    --section: #F9FAFB;
+    --badge: #E5E7EB;
+    --text-badge: #4B5563;
+    --white: #FFF;
+    --green: rgb(14, 90, 14);
+    --red: rgb(140, 0, 0);
+    --location-icon: rgb(169, 30, 30);
+    --online-color: #10B981;
+    --overlay: rgba(17, 24, 39, 0.20);
+    --border-sidebar: #F3F4F6;
+    --btn-color: #F9FAFB;
+}
+
+.light-theme{
+    --title: #111827;
+    --text: #4B5563;
+    --hover: #00668e;
+    --blue: #005171;
+    --btn-mobile: #111827;
+    --section: #F9FAFB;
+    --badge: #E5E7EB;
+    --text-badge: #4B5563;
+    --white: #FFF;
+    --green: rgb(14, 90, 14);
+    --red: rgb(140, 0, 0);
+    --location-icon: rgb(169, 30, 30);
+    --online-color: #10B981;
+    --overlay: rgba(17, 24, 39, 0.20);
+    --border-sidebar: #F3F4F6;
+    --btn-color: #F9FAFB;
+}
+
+.dark-theme{
+    --title: #F9FAFB;
+    --text: #D1D5DB;
+    --hover: #00668e;
+    --blue: #005171;
+    --btn-mobile: #D1D5DB;
+    --section: #111827;
+    --badge: #374151;
+    --text-badge: #D1D5DB;
+    --white: #030712;
+    --green: rgb(14, 90, 14);
+    --red: rgb(140, 0, 0);
+    --location-icon: rgb(169, 30, 30);
+    --online-color: #10B981;
+    --overlay: rgba(17, 24, 39, 0.20);
+    --border-sidebar: #F3F4F6;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --title: #F9FAFB;
+        --text: #D1D5DB;
+        --hover: #00668e;
+        --blue: #005171;
+        --btn-mobile: #D1D5DB;
+        --section: #111827;
+        --badge: #374151;
+        --text-badge: #D1D5DB;
+        --white: #030712;
+        --green: rgb(14, 90, 14);
+        --red: rgb(140, 0, 0);
+        --location-icon: rgb(169, 30, 30);
+        --online-color: #10B981;
+        --overlay: rgba(17, 24, 39, 0.20);
+        --border-sidebar: #F3F4F6;
+    }
+  }

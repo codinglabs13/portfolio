@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
 import Home from "./components/Home";
@@ -21,16 +21,26 @@ function App() {
     setOpenMenu(false);
   };
 
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  useEffect(() => {
+    document.body.className = isDarkTheme ? 'dark-theme' : 'light-theme';
+  }, [isDarkTheme]);
+
+  const toggleTheme = () => {
+    setIsDarkTheme(prevTheme => !prevTheme);
+  };
+
   return (
     <>
       <header>
-        <Navbar handleOpenMenu={handleOpenMenu} />
+        <Navbar handleOpenMenu={handleOpenMenu} toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
       </header>
       <main>
-        <Sidebar openMenu={openMenu} handleCloseMenu={handleCloseMenu} />
+        <Sidebar openMenu={openMenu} handleCloseMenu={handleCloseMenu} toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
         <Home />
         <About />
-        <Skills />
+        <Skills isDarkTheme={isDarkTheme}/>
         <Experience />
         <Project />
       </main>

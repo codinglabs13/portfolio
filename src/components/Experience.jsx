@@ -4,7 +4,7 @@ import '../assets/scss/experience.scss'
 
 const Experience = () => {
   return (
-    <div className="experience" id='experience'>
+    <section className="experience" id='experience'>
         <div className="title">
             <h2 className="badge">
                 Mes Expériences
@@ -35,7 +35,7 @@ const Experience = () => {
                 ))}
             </ul>
         </div>
-    </div>
+    </section>
   )
 }
 

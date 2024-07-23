@@ -1,3 +1,5 @@
+@import "./assets/scss/theme.scss";
+
 @font-face {
     font-family: "Mulish";
     font-weight: 400; /* Regular */
@@ -25,13 +27,14 @@ body{
     font-weight: 400;
     position: relative;
     scroll-behavior: smooth;
+    background-color: var(--white);
 
     a{
         text-decoration: none;
         transition: 300ms ease-in-out;
 
         &:hover{
-            color: #005171;
+            color: var(--hover);
             transition: 300ms ease-in-out;
         }
     }

@@ -1,5 +1,7 @@
+@import "./theme.scss";
+
 .about{
-    background-color: #F9FAFB;
+    background-color: var(--section);
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -22,12 +24,12 @@
 
         .badge{
             padding: 4px 20px;
-            background-color: #E5E7EB;
+            background-color: var(--badge);
             border-radius: 12px;
             font-size: 14px;
             line-height: 20px;
             font-weight: 500;
-            color: #4B5563;
+            color: var(--badge-color);
         }
     }
 
@@ -66,7 +68,7 @@
             h2{
                 font-size: 30px;
                 line-height: 36px;
-                color: #111827;
+                color: var(--title);
 
                 @media screen and (max-width: 500px) {
                     font-size: 24px;
@@ -78,12 +80,13 @@
                 line-height: 24px;
                 font-weight: 400;
                 margin: 0;
-                color: #4B5563;
+                color: var(--text);
             }
 
             ul{
                 display: flex;
                 flex-wrap: wrap;
+                color: var(--text);
 
                 li{
                     width: 50%;

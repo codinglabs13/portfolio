@@ -1,3 +1,5 @@
+@import "./theme.scss";
+
 .project{
     padding: 96px 80px;
     display: flex;
@@ -22,18 +24,18 @@
 
         .badge{
             padding: 4px 20px;
-            background-color: #E5E7EB;
+            background-color: var(--badge);
             border-radius: 12px;
             font-size: 14px;
             line-height: 20px;
             font-weight: 500;
-            color: #4B5563;
+            color: var(--text-badge);
         }
 
         .subtitle{
             max-width: 576px;
             min-width: 290px;
-            color: #4B5563;
+            color: var(--text);
             font-size: 20px;
             line-height: 28px;
             text-align: center;
@@ -53,6 +55,7 @@
                 border-radius: 12px;
                 height: 100%;
                 display: flex;
+                background: var(--white);
 
                 @media screen and (max-width: 1036px) {
                     flex-direction: column;
@@ -82,14 +85,14 @@
                         font-size: 20px;
                         font-weight: 700;
                         line-height: 28px;
-                        color: #111827;
+                        color: var(--title);
                         margin: 0;
                     }
 
                     p{
                         font-size: 16px;
                         line-height: 24px;
-                        color: #4B5563;
+                        color: var(--text);
 
                         @media screen and (max-width: 500px) {
                             text-align: justify;
@@ -104,23 +107,23 @@
 
                         .badge{
                             padding: 4px 20px;
-                            background-color: #E5E7EB;
+                            background-color: var(--badge);
                             border-radius: 12px;
                             font-size: 14px;
                             line-height: 20px;
                             font-weight: 500;
-                            color: #4B5563;
+                            color: var(--text-badge);
                         }
                     }
 
                     .badge{
                         padding: 4px 20px;
-                        background-color: #E5E7EB;
+                        background-color: var(--badge);
                         border-radius: 12px;
                         font-size: 14px;
                         line-height: 20px;
                         font-weight: 500;
-                        color: #4B5563;
+                        color: var(--text-badge);
                         width: fit-content;
                     }
 
@@ -136,10 +139,10 @@
                             svg{
                                 width: 24px;
                                 height: 24px;
-                                color: #4B5563;
+                                color: var(--text);
 
                                 &:hover{
-                                    color: #005171;
+                                    color: var(--hover);
                                     transition: 300ms ease-in-out;
                                 }
                             }
@@ -151,7 +154,7 @@
 
                 .img-content{
                     width: 50%;
-                    background-color: #F9FAFB;
+                    background-color: var(--section);
                     padding: 48px;
                     display: flex;
                     align-items: center;

@@ -8,7 +8,7 @@ import '../assets/scss/home.scss'
 
 const Home = () => {
   return (
-    <div className="home" id='home'>
+    <section className="home" id='home'>
         <div className="text">
             <div className="bio">
                 <h1>Bonjour, je m'appel Dorian 👋</h1>
@@ -42,7 +42,7 @@ const Home = () => {
             <img src={Picture} alt="Dorian Marechal développeur web" />
             <div className="shadow"></div>
         </div>
-    </div>
+    </section>
   )
 }
 

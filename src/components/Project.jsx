@@ -5,7 +5,7 @@ import '../assets/scss/project.scss'
 
 const Project = () => {
   return (
-    <div className="project" id='project'> 
+    <section className="project" id='project'> 
         <div className="title">
             <h2 className="badge">
                 Mes Projets
@@ -47,7 +47,7 @@ const Project = () => {
                 ))}
             </ul>
         </div>
-    </div>
+    </section>
   )
 }
 

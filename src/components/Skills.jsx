@@ -3,9 +3,9 @@ import skillsData from '../data/skillsData'
 import '../assets/scss/skills.scss'
 
 
-const Skills = () => {
+const Skills = ({isDarkTheme}) => {
   return (
-    <div className="skills" id='skills'>
+    <section className="skills" id='skills'>
         <div className="title">
             <h2 className="badge">
                 Mes Compétences
@@ -20,7 +20,7 @@ const Skills = () => {
                 {skillsData.map((item, index) => (
                     <li key={index}>
                         <div className="icon">
-                            <img src={item.icon} alt={item.altText} />
+                            <img src={item.iconDark && isDarkTheme ? item.iconDark : item.icon} alt={item.altText} />
                         </div>
                         <span className="label">
                             {item.label}
@@ -29,7 +29,7 @@ const Skills = () => {
                 ))}
             </ul>
         </div>
-    </div>
+    </section>
   )
 }
 

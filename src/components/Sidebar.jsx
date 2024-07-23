@@ -2,11 +2,12 @@ import React from 'react';
 import { FaXmark } from "react-icons/fa6";
 import { Link as ScrollLink } from 'react-scroll';
 import Logo from '../assets/img/Logo.svg';
+import LogoLight from '../assets/img/Logo white.svg';
 import { FaRegSun, FaRegMoon } from "react-icons/fa6";
 import CV from '../assets/CV.pdf';
 import '../assets/scss/sidebar.scss';
 
-const Sidebar = ({ openMenu, handleCloseMenu }) => {
+const Sidebar = ({ openMenu, handleCloseMenu, toggleTheme, isDarkTheme }) => {
   return (
     <>
       <div className={openMenu ? "overlay active" : "overlay"}></div>
@@ -14,7 +15,7 @@ const Sidebar = ({ openMenu, handleCloseMenu }) => {
       <div className={openMenu ? "sidebar active" : "sidebar"}>
         <div className="logo-close">
           <ScrollLink to="home" smooth={true} duration={500} className="sidebar-brand">
-            <img src={Logo} alt="Logo Dorian Marechal" />
+            <img src={isDarkTheme ? LogoLight : Logo} alt="Logo Dorian Marechal" />
           </ScrollLink>
           <button className="btn btn-close" onClick={handleCloseMenu}>
             <FaXmark />
@@ -52,14 +53,11 @@ const Sidebar = ({ openMenu, handleCloseMenu }) => {
         <div className="sidebar-theme-download">
           <button className='btn btn-theme'>
             <span className="text-change">
-              Mode sombre
+              {isDarkTheme ? "Mode sombre" : "Mode clair"}
             </span>
-            <button className="icon" role='button'>
-              <span className="sun">
-                <FaRegSun />
-              </span>
+            <button className="icon" onClick={toggleTheme}>
               <span className="moon">
-                <FaRegMoon />
+                {isDarkTheme ? <FaRegMoon /> : <FaRegSun />}
               </span>
               <span className='text-hidden'>Button for change theme dark or light</span>
             </button>

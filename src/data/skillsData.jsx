@@ -1,6 +1,7 @@
 import Canva from '../assets/img/canva-icon.svg'
 import Bootstrap from '../assets/img/getbootstrap-icon 1.svg'
 import Express from '../assets/img/icon-express.svg'
+import ExpressLight from '../assets/img/icon-expressLight.svg'
 import Javascript from '../assets/img/icon-javascript.svg'
 import NodeJs from '../assets/img/icon-nodejs.svg'
 import Figma from '../assets/img/icon-figma.svg'
@@ -10,6 +11,7 @@ import ReactIcons from '../assets/img/icon-react.svg'
 import Sass from '../assets/img/icon-sass.svg'
 import Tailwind from '../assets/img/icon-tailwindcss.svg'
 import Github from '../assets/img/FaGithubSquare.svg'
+import GithubLight from '../assets/img/FaGithubSquareLight.svg'
 import Php from '../assets/img/php-icon 1.svg'
 import MySql from '../assets/img/mysql-icon 1.svg'
 import MySqlServer from '../assets/img/sql-server.svg'
@@ -31,8 +33,8 @@ const skillsData = [
   { 
     label: 'Express', 
     icon: Express,
-    altText: "Logo Express" 
-
+    altText: "Logo Express", 
+    iconDark: ExpressLight
   },
   { 
     label: 'JavaScript', 
@@ -85,8 +87,8 @@ const skillsData = [
   { 
     label: 'GitHub', 
     icon: Github,
-    altText: "Logo GitHub" 
-
+    altText: "Logo GitHub", 
+    iconDark: GithubLight
   },
   { 
     label: 'PHP', 

@@ -1,8 +1,10 @@
+@import "./theme.scss";
+
 .overlay{
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(17, 24, 39, 0.20);
+    background: var(--overlay);
     backdrop-filter: blur(5px);
     z-index: 8;
     top: 0;
@@ -25,7 +27,7 @@
     display: none;
     z-index: 8;
     width: 320px;
-    background: #fff;
+    background: var(--white);
     
 
     @media screen and (max-width: 1036px) {
@@ -49,7 +51,7 @@
             display: flex;
             justify-content: space-between;
             align-items: start;
-            border-bottom: 1px solid #F3F4F6;
+            border-bottom: 1px solid var(--border-sidebar);
 
             .sidebar-brand{
                 width: 208px;
@@ -65,6 +67,7 @@
                 svg{
                     width: 26px;
                     height: 26px;
+                    fill: var(--btn-mobile);
                 }
             }
         }
@@ -76,11 +79,11 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
-            border-bottom: 1px solid #F3F4F6;
+            border-bottom: 1px solid var(--border-sidebar);
 
             .sidebar-item{
                 .sidebar-link{
-                    color: #4B5563;
+                    color: var(--text);
                     line-height: 24px;
                     transform: scale(1);
                     transition: 300ms linear;
@@ -88,7 +91,7 @@
                     cursor: pointer;
     
                     &:hover{
-                        color: #005171;
+                        color: var(--hover);
                         transform: scale(1.9);
                         transition: 300ms linear;
                     }
@@ -108,7 +111,7 @@
                 align-items: center;
                 justify-content: space-between;
                 line-height: 24px;
-                color: #4B5563;
+                color: var(--text);
                 font-size: 16px;
                 font-weight: 500;
                
@@ -127,6 +130,7 @@
                     svg{
                         width: 26px;
                         height: 26px;
+                        color: var(--text);
                     }
 
                     .sun{
@@ -137,14 +141,14 @@
 
             .btn-download{
                 padding: 8px 16px;
-                background-color: #005171;
+                background-color: var(--blue);
                 border-radius: 12px;
-                color: #F9FAFB;
+                color: var(--btn-color);
                 text-align: center;
-                border: 1px solid #005171;
+                border: 1px solid var(--blue);
 
                 &:hover{
-                    background-color: #00658d;
+                    background-color: var(--hover);
                 }
             }
         }

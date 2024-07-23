@@ -1,8 +1,10 @@
+@import "./theme.scss";
+
 footer{
     padding: 96px 80px 20px 96px;
     display: flex;
     flex-direction: column;
-    background-color: #F9FAFB;
+    background-color: var(--section);
     gap: 48px;
 
     @media screen and (max-width: 768px) {
@@ -43,11 +45,11 @@ footer{
         }
 
         &.success{
-            background: rgb(14, 90, 14);
+            background: var(--green);
         }
 
         &.error{
-            background: rgb(140, 0, 0);
+            background: var(--red);
         }
 
         .icon__wrapper {
@@ -99,18 +101,18 @@ footer{
 
         .badge{
             padding: 4px 20px;
-            background-color: #E5E7EB;
+            background-color: var(--badge);
             border-radius: 12px;
             font-size: 14px;
             line-height: 20px;
             font-weight: 500;
-            color: #4B5563;
+            color: var(--text-badge);
         }
 
         .subtitle{
             max-width: 576px;
             min-width: 290px;
-            color: #4B5563;
+            color: var(--text);
             font-size: 20px;
             line-height: 28px;
             text-align: center;
@@ -123,7 +125,7 @@ footer{
             border-radius: 12px;
             height: 100%;
             display: flex;
-            background-color: #FFF;
+            background-color: var(--white);
             flex-direction: column;
             padding: 50px 35px;
             gap: 32px;
@@ -145,7 +147,7 @@ footer{
                     .label{
                         font-size: 20px;
                         line-height: 24px;
-                        color: #4B5563; 
+                        color: var(--text); 
                         margin-bottom: 12px;
                     }
 
@@ -162,16 +164,16 @@ footer{
                         }
 
                         input:checked ~ label{
-                            background-color: #005171;
-                            border-color: #005171;
-                            color: #fff;
+                            background-color: var(--blue);
+                            border-color: var(--blue);
+                            color: var(--white);
                             transition: background-color 200ms ease-in-out,
                             border 300ms ease-in-out;
                         }
 
                         label{
-                            color: #4B5563;
-                            border: 1px solid #4B5563;
+                            color: var(--text);
+                            border: 1px solid var(--text);
                             border-radius: 12px;
                             padding: 10px 20px;
                             background-color: transparent;
@@ -182,8 +184,8 @@ footer{
                             cursor: pointer;
 
                             &.error{
-                                color: rgb(140, 0, 0);
-                                border-color: rgb(140, 0, 0);
+                                color: var(--red);
+                                border-color: var(--red);
                             }
 
                             @media screen and (max-width: 500px) {
@@ -203,7 +205,7 @@ footer{
                 }
 
                 p.error{
-                    color: rgb(140, 0, 0);
+                    color: var(--red);
                     font-size: 14px;
                     margin: 0;
                 }
@@ -217,28 +219,28 @@ footer{
                 label{
                     font-size: 16px;
                     line-height: 16px;
-                    color: #4B5563;
+                    color: var(--text);
                     font-weight: 500;
                     transition: 300ms linear;
                 }
 
                 input.error ~ label{
-                    color: rgb(140, 0, 0);
+                    color: var(--red);
                 }
 
                 input:focus-within ~ label, textarea:focus-within ~ label{
-                    color: #005171;
+                    color: var(--blue);
                     font-size: 18px;
                     transition: 200ms linear;
                 }
 
                 input:focus-within, textarea:focus-within{
-                    border-color: #005171;
+                    border-color: var(--blue);
                     transition: 200ms linear;
                 }
 
                 input, textarea{
-                    border-bottom: 1px solid  #4B5563;
+                    border-bottom: 1px solid  var(--text);
                     border-top: 0;
                     border-right: 0;
                     border-left: 0;
@@ -249,16 +251,16 @@ footer{
                     resize: none;
                     font-size: 16px;
                     line-height: 16px;
-                    color: #4B5563;
+                    color: var(--text);
                     font-weight: 500;
 
                     &.error{
-                        border-color: rgb(140, 0, 0);
+                        border-color: var(--red);
                     }
                 }
 
                 p.error{
-                    color: rgb(140, 0, 0);
+                    color: var(--red);
                     font-size: 14px;
                     margin: 0;
                 }
@@ -266,20 +268,22 @@ footer{
 
             button{
                 border-radius: 50px;
-                background-color: #005171;
-                border: 1px solid #005171;
+                background-color: var(--blue);
+                border: 1px solid var(--blue);
                 text-align: center;
                 padding: 16px 71px;
-                color: #fff;
+                color: var(--btn-color);
                 font-size: 18px;
                 line-height: 24px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
+                transition: 300ms ease-in-out;
 
                 &:hover{
-                    background-color: #00658d;
+                    background-color: var(--hover);
+                    transition: 300ms ease-in-out;
                 }
 
                 @media screen and (max-width: 500px) {
@@ -297,8 +301,8 @@ footer{
                         width: 20px;
                         height: 20px;
                         border-radius: 50%;
-                        border: 3px solid #fff;
-                        border-color: #fff transparent #fff transparent;
+                        border: 3px solid var(--white);
+                        border-color: var(--white) transparent var(--white) transparent;
                         animation: ring 1.2s linear infinite;
                       }
                 }
@@ -308,7 +312,7 @@ footer{
 
     .copy{
         text-align: center;
-        color: #4B5563;
+        color: var(--text);
         font-size: 14px;
         line-height: 20px;
         width: -webkit-fill-available;

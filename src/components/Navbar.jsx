@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import Logo from '../assets/img/Logo.svg';
+import LogoLight from '../assets/img/Logo white.svg';
 import { FaRegSun, FaRegMoon } from "react-icons/fa6";
 import CV from '../assets/CV.pdf';
 import '../assets/scss/navbar.scss';
 
-const Navbar = ({ handleOpenMenu }) => {
+const Navbar = ({ handleOpenMenu, toggleTheme, isDarkTheme }) => {
     const [isSticky, setIsSticky] = useState(false);
   
     const handleScroll = () => {
@@ -27,7 +28,7 @@ const Navbar = ({ handleOpenMenu }) => {
   return (
     <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
       <ScrollLink to="home" smooth={true} duration={500} className="navbar-brand">
-        <img src={Logo} alt="Logo Dorian Marechal" />
+        <img src={isDarkTheme ? LogoLight : Logo} alt="Logo Dorian Marechal" />
       </ScrollLink>
 
       <div className="mobile-menu-btn">
@@ -65,12 +66,9 @@ const Navbar = ({ handleOpenMenu }) => {
         <li className="line"></li>
         <li className="nav-item dark-mode-contact">
           <div className="dark-mode">
-            <button className='btn btn-theme'>
-              <span className="sun">
-                <FaRegSun />
-              </span>
+            <button className='btn btn-theme' onClick={toggleTheme}>
               <span className="moon">
-                <FaRegMoon />
+              {isDarkTheme ? <FaRegMoon /> : <FaRegSun />}
               </span>
               <span className='text-hidden'>Button for change theme dark or light</span>
             </button>
