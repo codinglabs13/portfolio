@@ -32,7 +32,7 @@ const Navbar = ({ handleOpenMenu }) => {
 
       <div className="mobile-menu-btn">
         <button className="btn btn-mobile" onClick={handleOpenMenu}>
-          <span className="line"></span>
+          <p className="line"><span className='text-hidden'>mobile button</span></p>
         </button>
       </div>
 
@@ -72,6 +72,7 @@ const Navbar = ({ handleOpenMenu }) => {
               <span className="moon">
                 <FaRegMoon />
               </span>
+              <span className='text-hidden'>Button for change theme dark or light</span>
             </button>
           </div>
           <a href={CV} download='cv-dorian-marechal.pdf' className='btn-download'>

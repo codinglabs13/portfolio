@@ -25,14 +25,13 @@ body{
     font-weight: 400;
     position: relative;
     scroll-behavior: smooth;
-    max-width: 1680px;
 
     a{
         text-decoration: none;
         transition: 300ms ease-in-out;
 
         &:hover{
-            color: #1ABCFE;
+            color: #005171;
             transition: 300ms ease-in-out;
         }
     }
@@ -46,6 +45,11 @@ body{
 
     header{
         height: 86px;
+    }
+
+    .text-hidden{
+        visibility: hidden;
+        position: absolute;
     }
 
     

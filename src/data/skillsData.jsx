@@ -16,22 +16,102 @@ import MySqlServer from '../assets/img/sql-server.svg'
 import Wordpress from '../assets/img/wordpress-icon 1.svg'
 
 const skillsData = [
-    { label: 'Canva', icon: Canva },
-    { label: 'Bootstrap', icon: Bootstrap },
-    { label: 'Express', icon: Express },
-    { label: 'JavaScript', icon: Javascript },
-    { label: 'Node.js', icon: NodeJs },
-    { label: 'Figma', icon: Figma },
-    { label: 'Git', icon: Git },
-    { label: 'GitLab', icon: Gitlab },
-    { label: 'React', icon: ReactIcons },
-    { label: 'Sass', icon: Sass },
-    { label: 'Tailwind', icon: Tailwind },
-    { label: 'GitHub', icon: Github },
-    { label: 'PHP', icon: Php },
-    { label: 'MySQL', icon: MySql },
-    { label: 'SQL Server', icon: MySqlServer },
-    { label: 'WordPress', icon: Wordpress }
-  ];
-  
-  export default skillsData;
+  { 
+    label: 'Canva', 
+    icon: Canva,
+    altText: "Logo Canva" 
+
+  },
+  { 
+    label: 'Bootstrap', 
+    icon: Bootstrap,
+    altText: "Logo Bootstrap" 
+
+  },
+  { 
+    label: 'Express', 
+    icon: Express,
+    altText: "Logo Express" 
+
+  },
+  { 
+    label: 'JavaScript', 
+    icon: Javascript,
+    altText: "Logo JavaScript" 
+
+  },
+  { 
+    label: 'Node.js', 
+    icon: NodeJs,
+    altText: "Logo Node.js" 
+
+  },
+  { 
+    label: 'Figma', 
+    icon: Figma,
+    altText: "Logo Figma" 
+
+  },
+  { 
+    label: 'Git', 
+    icon: Git,
+    altText: "Logo Git" 
+
+  },
+  { 
+    label: 'GitLab', 
+    icon: Gitlab,
+    altText: "Logo GitLab" 
+
+  },
+  { 
+    label: 'React', 
+    icon: ReactIcons,
+    altText: "Logo React" 
+
+  },
+  { 
+    label: 'Sass', 
+    icon: Sass,
+    altText: "Logo Sass" 
+
+  },
+  { 
+    label: 'Tailwind', 
+    icon: Tailwind,
+    altText: "Logo Tailwind" 
+
+  },
+  { 
+    label: 'GitHub', 
+    icon: Github,
+    altText: "Logo GitHub" 
+
+  },
+  { 
+    label: 'PHP', 
+    icon: Php,
+    altText: "Logo PHP" 
+
+  },
+  { 
+    label: 'MySQL', 
+    icon: MySql,
+    altText: "Logo MySQL" 
+
+  },
+  { 
+    label: 'SQL Server', 
+    icon: MySqlServer,
+    altText: "Logo SQL Server" 
+
+  },
+  { 
+    label: 'WordPress', 
+    icon: Wordpress,
+    altText: "Logo WordPress" 
+
+  }
+];
+
+export default skillsData;

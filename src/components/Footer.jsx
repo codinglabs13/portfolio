@@ -117,8 +117,8 @@ const Footer = () => {
       <div className="content">
         <form onSubmit={handleSubmit}>
           <div className="group-checkbox">
-            <span className="label">Qui êtes-vous ?</span>
-            <div className="checkboxs">
+            <fieldset className="checkboxs">
+              <legend className='label'>Qui êtes-vous ?</legend>
               <div className="group-check">
                 <input type="radio" name="which" id="enterprise" value="enterprise" onChange={handleChange} />
                 <label htmlFor="enterprise" className={errors.which ? "error" : ""}>Une entreprise</label>
@@ -131,7 +131,7 @@ const Footer = () => {
                 <input type="radio" name="which" id="individual" value="individual" onChange={handleChange} />
                 <label htmlFor="individual" className={errors.which ? "error" : ""}>Un particulier</label>
               </div>
-            </div>
+            </fieldset>
             {errors.which && <p className="error">{errors.which}</p>}
           </div>
           <div className="group-input">

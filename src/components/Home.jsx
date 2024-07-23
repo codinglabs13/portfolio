@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLocationCrosshairs, FaSquareGithub } from "react-icons/fa6";
+import { FaLocationCrosshairs, FaSquareGithub, FaLinkedin } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import Picture from '../assets/img/dorian.jpg'
 import '../assets/scss/home.scss'
@@ -30,11 +30,16 @@ const Home = () => {
             <div className="link-contact">
                 <a href="https://github.com/codinglabs13" target='_blanc' className='icon-contact'>
                     <FaSquareGithub />
+                    <span className="text-hidden">Github link</span>
+                </a>
+                <a href="https://www.linkedin.com/in/dorian-marechal-325848269/" target='_blanc' className='icon-contact'>
+                    <FaLinkedin />
+                    <span className="text-hidden">Linkedin link</span>
                 </a>
             </div>
         </div>
         <div className="picture">
-            <img src={Picture} alt="Photo Dorian Marechal" />
+            <img src={Picture} alt="Dorian Marechal développeur web" />
             <div className="shadow"></div>
         </div>
     </div>

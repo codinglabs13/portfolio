@@ -18,6 +18,7 @@ const Sidebar = ({ openMenu, handleCloseMenu }) => {
           </ScrollLink>
           <button className="btn btn-close" onClick={handleCloseMenu}>
             <FaXmark />
+            <span className="text-hidden">Close button</span>
           </button>
         </div>
 
@@ -53,14 +54,15 @@ const Sidebar = ({ openMenu, handleCloseMenu }) => {
             <span className="text-change">
               Mode sombre
             </span>
-            <div className="icon">
+            <button className="icon" role='button'>
               <span className="sun">
                 <FaRegSun />
               </span>
               <span className="moon">
                 <FaRegMoon />
               </span>
-            </div>
+              <span className='text-hidden'>Button for change theme dark or light</span>
+            </button>
           </button>
           <a href={CV} download='cv-dorian-marechal.pdf' className='btn-download'>
             Télécharger mon CV

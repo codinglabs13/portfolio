@@ -20,7 +20,7 @@ const Skills = () => {
                 {skillsData.map((item, index) => (
                     <li key={index}>
                         <div className="icon">
-                            <img src={item.icon} alt={item.label} />
+                            <img src={item.icon} alt={item.altText} />
                         </div>
                         <span className="label">
                             {item.label}
