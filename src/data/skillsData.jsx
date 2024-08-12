@@ -16,102 +16,113 @@ import Php from '../assets/img/php-icon 1.svg'
 import MySql from '../assets/img/mysql-icon 1.svg'
 import MySqlServer from '../assets/img/sql-server.svg'
 import Wordpress from '../assets/img/wordpress-icon 1.svg'
+import { delay } from 'framer-motion'
 
 const skillsData = [
   { 
     label: 'Canva', 
     icon: Canva,
-    altText: "Logo Canva" 
+    altText: "Logo Canva",
+    delay: 0.25 
 
   },
   { 
     label: 'Bootstrap', 
     icon: Bootstrap,
-    altText: "Logo Bootstrap" 
+    altText: "Logo Bootstrap",
+    delay: 0.50
 
   },
   { 
     label: 'Express', 
     icon: Express,
     altText: "Logo Express", 
-    iconDark: ExpressLight
+    iconDark: ExpressLight,
+    delay: 0.75
   },
   { 
     label: 'JavaScript', 
     icon: Javascript,
-    altText: "Logo JavaScript" 
-
+    altText: "Logo JavaScript",
+    delay: 1
   },
   { 
     label: 'Node.js', 
     icon: NodeJs,
-    altText: "Logo Node.js" 
-
+    altText: "Logo Node.js",
+    delay: 1.25
   },
   { 
     label: 'Figma', 
     icon: Figma,
-    altText: "Logo Figma" 
+    altText: "Logo Figma",
+    delay: 1.50 
 
   },
   { 
     label: 'Git', 
     icon: Git,
-    altText: "Logo Git" 
-
+    altText: "Logo Git", 
+    delay: 1.75
   },
   { 
     label: 'GitLab', 
     icon: Gitlab,
-    altText: "Logo GitLab" 
-
+    altText: "Logo GitLab", 
+    delay: 2
   },
   { 
     label: 'React', 
     icon: ReactIcons,
-    altText: "Logo React" 
-
+    altText: "Logo React",
+    delay: 2.25
   },
   { 
     label: 'Sass', 
     icon: Sass,
-    altText: "Logo Sass" 
+    altText: "Logo Sass",
+    delay: 2.50 
 
   },
   { 
     label: 'Tailwind', 
     icon: Tailwind,
-    altText: "Logo Tailwind" 
-
+    altText: "Logo Tailwind", 
+    delay: 2.75
   },
   { 
     label: 'GitHub', 
     icon: Github,
     altText: "Logo GitHub", 
-    iconDark: GithubLight
+    iconDark: GithubLight,
+    delay: 3
   },
   { 
     label: 'PHP', 
     icon: Php,
-    altText: "Logo PHP" 
+    altText: "Logo PHP",
+    delay: 3.25 
 
   },
   { 
     label: 'MySQL', 
     icon: MySql,
-    altText: "Logo MySQL" 
+    altText: "Logo MySQL",
+    delay: 3.50  
 
   },
   { 
     label: 'SQL Server', 
     icon: MySqlServer,
-    altText: "Logo SQL Server" 
+    altText: "Logo SQL Server",
+    delay: 3.75
 
   },
   { 
     label: 'WordPress', 
     icon: Wordpress,
-    altText: "Logo WordPress" 
+    altText: "Logo WordPress",
+    delay: 4
 
   }
 ];

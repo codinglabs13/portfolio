@@ -14,6 +14,16 @@ nav{
     left: 0;
     width: -webkit-fill-available;
 
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     &.sticky {
         position: fixed;
         transition: top 0.3s ease-in-out;

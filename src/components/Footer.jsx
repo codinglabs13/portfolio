@@ -108,6 +108,7 @@ const Footer = () => {
         </div>
         <p>{status}</p>
       </div>
+      <div className="container">
       <div className="title" id='contact'>
         <h2 className="badge">Contactez moi</h2>
         <span className="subtitle">
@@ -154,6 +155,7 @@ const Footer = () => {
       </div>
       <div className="copy">
         &copy; Codinglabs 2024
+      </div>
       </div>
     </>
   );

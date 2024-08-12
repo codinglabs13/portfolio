@@ -14,7 +14,8 @@ const experienceData = [
             "Conception",
             "Dévellopement"
         ],
-        date: "19/09/2023 - 31/08/2024"
+        date: "19/09/2023 - 31/08/2024",
+        move: "left"
     },
     {
         logo: NotAnnuaire,
@@ -24,7 +25,8 @@ const experienceData = [
             "Réalisation d’un back-office pour les intances de notaire",
             "Utilisation de git et gitlab"
         ],
-        date: "03/05/2023 - 03/07/2023"
+        date: "03/05/2023 - 03/07/2023",
+        move: "right"
     }
 ]
 

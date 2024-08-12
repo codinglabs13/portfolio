@@ -29,6 +29,11 @@ body{
     scroll-behavior: smooth;
     background-color: var(--white);
 
+    ::selection{
+        background-color: var(--blue);
+        color: white;
+    }
+
     a{
         text-decoration: none;
         transition: 300ms ease-in-out;
@@ -53,6 +58,11 @@ body{
     .text-hidden{
         visibility: hidden;
         position: absolute;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
     }
 
     

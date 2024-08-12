@@ -2,10 +2,14 @@ import React from 'react'
 import projectData from '../data/ProjectData'
 import { FaLink, FaGithub } from "react-icons/fa6"
 import '../assets/scss/project.scss'
+import LazyLoad from 'react-lazyload'
+import ScrollReveal from './ScrollReveal'
+import ScrollRevealRightLeft from './ScrollRevealRightLeft'
 
 const Project = () => {
   return (
     <section className="project" id='project'> 
+        <div className="container">
         <div className="title">
             <h2 className="badge">
                 Mes Projets
@@ -17,9 +21,12 @@ const Project = () => {
         <div className="content">
             <ul className='card-list'>
                 {projectData.map((item, index) => (
-                    <li className='card' key={index}>
+                    <ScrollRevealRightLeft move={item.move} height={"500"} key={index}>
+                    <li className='card' >
                         <div className="img-content">
-                            <img src={item.image} alt={item.alt} />
+                            <LazyLoad height={342.34} offset={100}>
+                                <img src={item.image} alt={item.alt} />
+                            </LazyLoad>
                         </div>
                         <div className="text-content">
                             <h3>{item.title}</h3>
@@ -44,8 +51,10 @@ const Project = () => {
                             {item.soon && <span className='badge'>{item.soon}</span>}
                         </div>
                     </li>
+                    </ScrollRevealRightLeft>
                 ))}
             </ul>
+        </div>
         </div>
     </section>
   )

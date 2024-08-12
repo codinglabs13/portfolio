@@ -2,10 +2,17 @@
 
 .experience{
     padding: 96px 80px;
-    display: flex;
-    gap: 48px;
-    flex-direction: column;
     background-color: var(--section);
+
+    .container{
+        display: flex;
+        gap: 48px;
+        flex-direction: column;
+        max-width: 1400px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media screen and (max-width: 768px) {
         padding: 66px 40px;

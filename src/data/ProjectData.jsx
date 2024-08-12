@@ -17,7 +17,8 @@ const projectData = [
             "MySql"
         ],
         link: "https://notannuaire.app/annuaire-notaires-france/",
-        alt: "Not-annuaire.app back-office pour les instances de notaire"
+        alt: "Not-annuaire.app back-office pour les instances de notaire",
+        move: "left"
     },
     {
         image: Forum,
@@ -37,7 +38,8 @@ const projectData = [
             "Apache"
         ],
         soon: "En cour de dévellopement",
-        alt: "Forum d'entraide Index éducation pour les enseignant et les services scolaire"
+        alt: "Forum d'entraide Index éducation pour les enseignant et les services scolaire",
+        move: "right"
     },
     {
         image: Portfolio,
@@ -51,7 +53,8 @@ const projectData = [
         ],
         link: "dorian-marechal.fr",
         alt: "Portfolio dévellopeur web Dorian Marechal",
-        git: "https://github.com/codinglabs13/portfolio"
+        git: "https://github.com/codinglabs13/portfolio",
+        move: "left"
     },
     {
         image: Login,
@@ -60,7 +63,8 @@ const projectData = [
         stack: [
             "En cour de conception"
         ],
-        alt: "Gestionnaire de collection CRMLD"
+        alt: "Gestionnaire de collection CRMLD",
+        move: "right"
     },
 
 ]

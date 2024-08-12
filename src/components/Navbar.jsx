@@ -27,6 +27,7 @@ const Navbar = ({ handleOpenMenu, toggleTheme, isDarkTheme }) => {
 
   return (
     <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
+      <div className="container">
       <ScrollLink to="home" smooth={true} duration={500} className="navbar-brand">
         <img src={isDarkTheme ? LogoLight : Logo} alt="Logo Dorian Marechal" />
       </ScrollLink>
@@ -78,6 +79,7 @@ const Navbar = ({ handleOpenMenu, toggleTheme, isDarkTheme }) => {
           </a>
         </li>
       </ul>
+      </div>
     </nav>
   );
 }

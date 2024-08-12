@@ -1,12 +1,8 @@
 import { useState, useEffect } from "react"
 import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
-import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
-import Project from "./components/Project";
 import Footer from "./components/Footer";
+import Layout from "./components/Layout";
 
 function App() {
 
@@ -23,10 +19,6 @@ function App() {
 
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-  useEffect(() => {
-    document.body.className = isDarkTheme ? 'dark-theme' : 'light-theme';
-  }, [isDarkTheme]);
-
   const toggleTheme = () => {
     setIsDarkTheme(prevTheme => !prevTheme);
   };
@@ -38,11 +30,7 @@ function App() {
       </header>
       <main>
         <Sidebar openMenu={openMenu} handleCloseMenu={handleCloseMenu} toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-        <Home />
-        <About />
-        <Skills isDarkTheme={isDarkTheme}/>
-        <Experience />
-        <Project />
+        <Layout isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
       </main>
       <footer>
         <Footer />
