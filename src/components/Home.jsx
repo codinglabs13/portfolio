@@ -25,20 +25,21 @@ const Home = () => {
                         </ScrollReveal>
                     </div>
                     <div className="location-availability">
-                        <div className="location">
-                            <ScrollReveal delay={0.75}>
+                        <ScrollReveal delay={0.75}>
+                            <div className="location">
+
                                 <FaLocationCrosshairs />
                                 <span>Perpignan, France</span>
-                            </ScrollReveal>
 
-                        </div>
-                        <div className="availability">
-                            <ScrollReveal delay={0.95}>
+                            </div>
+                        </ScrollReveal>
+                        <ScrollReveal delay={0.95}>
+                            <div className="availability">
                                 <GoDotFill />
                                 <span>Disponible pour de nouveaux projets</span>
-                            </ScrollReveal>
 
-                        </div>
+                            </div>
+                        </ScrollReveal>
 
                     </div>
                     <div className="link-contact">
